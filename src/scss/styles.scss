@@ -2,8 +2,10 @@
 $gray-900: #212529;
 $body-color: $gray-900;
 $gray-100: #f8f9fa;
+$gray-600: #6c757d;
 $body-secondary-color: rgba($body-color, .75);
-
+$primary: #714b67;
+$secondary: #f4eff4;
 //Container
 $container-max-widths: (
   sm: 600px,
@@ -17,24 +19,71 @@ $container-max-widths: (
 $spacer: 1.25rem;
 
 //card
-$card-border-radius:0;
+$card-border-radius:$spacer;
 
 //Card header
 $nav-link-padding-x: $spacer;
-$nav-link-disabled-color: $gray-100;
+$nav-link-disabled-color: $gray-600;
+$nav-link-color: $primary;
+.card{
+    box-shadow: rgba($primary, 0.6) 0px 8px 24px;
+    .card-header{
+        .card-header-tabs{
+            .nav-link{
+                &.active{
+                    border-bottom: 2px solid $primary;
+                    border-bottom-color: $primary;
+                    font-weight: 700;
+                    background-color: $secondary;
+                }
+            }
+        }
+    }
+    .card-footer{
+        background-color: $primary;
+    }
+}
+
 
 //Card body
 $card-spacer-x: 0;
 $card-spacer-y: 0;
+.tab-content:first-child{
+    min-height: 303.19px
+}
+.img-color{
+    position: relative;
+    &:after{
+        background: rgba($primary, .3);
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
 
 //Tab 1
 $list-group-item-padding-x: 0;
 $list-group-item-padding-y: .75rem;
-
-.tab-content:first-child{
-    min-height: 293.19px
+.list-group-item{
+    .active{
+        font-weight: 700;
+    }
 }
+
+//Tab 2
+$spinner-width: 3rem;
+$spinner-animation-speed: 1.25s;
+
+
+
+
 
 
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
