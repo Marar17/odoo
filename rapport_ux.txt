@@ -1,0 +1,24 @@
+Tabbed Navigation
+The tabs are well-aligned and spaced. The visual style of the “disabled” text allows it to be clearly distinguished from the other tabs and discourages the user from clicking on it. However, removing it if it’s not essential could eliminate any potential confusion for the user.
+
+Adding a border and increasing the font weight for the active tab makes the selected tab clearly visible.
+
+Note that this type of component is not very practical on mobile, as the tabs lose their alignment. It would be wise to consider a different behavior for mobile screens.
+
+
+Visual Hierarchy
+The visual hierarchy is coherent and well-structured. The different elements, such as the title, subtitle, and content, are easily distinguishable.
+
+
+Contrast
+A contrast assessment could be carried out to ensure compliance with accessibility standards. Greater contrast would improve visibility for individuals with visual impairments.
+
+
+Tab 1
+Adding visual contrast to the vertical navigation helps the user easily identify their position. An enhancement or modification of this navigation could be considered to clarify that it is indeed a navigation menu.
+
+
+Tab 2
+Adding a loading indicator ("loader") can sometimes frustrate the user or give the impression that the site's performance is lacking. It may be wise to configure this loader to appear only in cases of page load delays.
+
+In this specific case, no additional content is loaded afterward, making the loading indicator unnecessary. It would be more relevant to replace it with another visual element to prevent the user from thinking that content is still loading.
