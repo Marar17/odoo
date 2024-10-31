@@ -1,0 +1,40 @@
+//Colors
+$gray-900: #212529;
+$body-color: $gray-900;
+$gray-100: #f8f9fa;
+$body-secondary-color: rgba($body-color, .75);
+
+//Container
+$container-max-widths: (
+  sm: 600px,
+  md: 600px,
+  lg: 600px,
+  xl: 600px,
+  xxl: 600px
+);
+
+//Spacer
+$spacer: 1.25rem;
+
+//card
+$card-border-radius:0;
+
+//Card header
+$nav-link-padding-x: $spacer;
+$nav-link-disabled-color: $gray-100;
+
+//Card body
+$card-spacer-x: 0;
+$card-spacer-y: 0;
+
+//Tab 1
+$list-group-item-padding-x: 0;
+$list-group-item-padding-y: .75rem;
+
+.tab-content:first-child{
+    min-height: 293.19px
+}
+
+
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
