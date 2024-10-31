@@ -1,4 +1,42 @@
 //Colors
+[data-bs-theme="red"]{
+  $theme-red-color-1: #9f1239;
+  $theme-red-color-2: #ffe4e6;
+  --bs-primary-rgb: 159, 18, 57;
+  --bs-secondary-rgb: 255, 228, 230;
+  --bs-nav-link-color: #9f1239;
+  .card{
+    box-shadow: rgba(#9f1239, 0.6) 0px 8px 24px;
+    .card-header{
+        .card-header-tabs{
+            .nav-link{
+              color: #9f1239;
+              &.disabled{
+                color: #6c757d;
+              }
+                &.active{
+                    border-bottom: 2px solid #9f1239;
+                    border-bottom-color: #9f1239;
+                    font-weight: 700;
+                    background-color: #ffe4e6;
+                }
+            }
+        }
+    }
+    .nav-link{
+      color: #9f1239;
+      &.disabled{
+        color: #6c757d;
+      }
+    }
+    .img-color{
+      &:after{
+          background: rgba(#9f1239, .3);
+      }
+    }
+  }
+}
+
 $gray-900: #212529;
 $body-color: $gray-900;
 $gray-100: #f8f9fa;
@@ -6,6 +44,8 @@ $gray-600: #6c757d;
 $body-secondary-color: rgba($body-color, .75);
 $primary: #714b67;
 $secondary: #f4eff4;
+
+
 //Container
 $container-max-widths: (
   sm: 600px,
@@ -38,9 +78,6 @@ $nav-link-color: $primary;
                 }
             }
         }
-    }
-    .card-footer{
-        background-color: $primary;
     }
 }
 
